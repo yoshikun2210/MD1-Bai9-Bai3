@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="so"></p>
+<button onclick="print()">Click vào nhanh</button>
+<script>
+    let so1 = 1;
+    let so2 = 100;
+    function print() {
+        if (so1 < so2 ){
+            document.getElementById("so").innerText=so1;
+            so1++;
+            setTimeout(print,100);
+        }else{
+            alert('Đã hoàn thành');
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
